@@ -1,15 +1,3 @@
-# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
-name: bazzite-dx-gnome
-# description will be included in the image's metadata
-description: Bazzite - Custom image to add development tools and add some customizations
-
-# the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-gnome
-image-version: latest
-
-# module configuration, executed in order
-# you can include multiple instances of the same module
 modules:
   - type: files
     files:
@@ -20,12 +8,11 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
     install:
-      - papirus-icon-theme
-      - openrgb
-      - coolercontrol
       - zen-browser
       - code
       - 1password
+    remove:
+      - lutris
 
   - type: default-flatpaks
     notify: false
@@ -36,13 +23,15 @@ modules:
         - rest.insomnia.Insomnia
         - com.spotify.Client
         - com.heroicgameslauncher.hgl
+        - com.usebottles.bottles
       remove:
         - org.mozilla.firefox
 
   - type: systemd
     system:
       enabled:
-        - coolercontrold.service
+        - podman.service
+        # TODO think about docker, can be installed here or later by the user via ujust brew
 
   - type: fonts
     fonts:
@@ -50,5 +39,6 @@ modules:
         - FiraCode
         - JetBrainsMono
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
+  - type: script
+    scripts:
+      - papirus.sh
