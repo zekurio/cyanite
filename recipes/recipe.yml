@@ -18,17 +18,14 @@ modules:
 
   - type: rpm-ostree
     repos:
-      - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browsder-fedora-%OS_VERSION%.repo
-      - https://packages.microsoft.com/yumrepos/vscode
-    keys:
-      - https://packages.microsoft.com/keys/microsoft.asc
+      - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
     install:
-      - https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
-      - code
-      - zen-browser
       - papirus-icon-theme
       - openrgb
       - coolercontrol
+      - 1password
+      - code
+      - zen-browser
 
   - type: default-flatpaks
     notify: false
