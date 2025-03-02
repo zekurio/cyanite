@@ -24,6 +24,8 @@ modules:
       - openrgb
       - coolercontrol
       - zen-browser
+      - code
+      - 1password
 
   - type: default-flatpaks
     notify: false
@@ -40,7 +42,7 @@ modules:
   - type: systemd
     system:
       enabled:
-        - coolercontrol.service
+        - coolercontrold.service
 
   - type: fonts
     fonts:
