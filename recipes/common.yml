@@ -38,7 +38,3 @@ modules:
       nerd-fonts:
         - FiraCode
         - JetBrainsMono
-
-  - type: script
-    scripts:
-      #- papirus.sh
