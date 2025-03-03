@@ -1,8 +1,6 @@
 # bazzite-dx &nbsp; [![bluebuild build badge](https://github.com/zekurio/bazzite-dx/actions/workflows/build.yml/badge.svg)](https://github.com/zekurio/bazzite-dx/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+Bazzite DX is a customized version of [Bazzite](https://bazzite.gg).
 
 ## Installation
 
@@ -13,7 +11,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/zekurio/bazzite-dx:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/zekurio/bazzite-dx-gnome:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +19,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/zekurio/bazzite-dx:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/zekurio/bazzite-dx-gnome:latest
   ```
 - Reboot again to complete the installation
   ```
