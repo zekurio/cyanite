@@ -44,3 +44,7 @@ modules:
       nerd-fonts:
         - FiraCode
         - JetBrainsMono
+  
+  - type: script
+    snippets:
+     - "chown -R 0:0 /usr/lib/opt/zen" # Fix zen not connecting to 1Password
