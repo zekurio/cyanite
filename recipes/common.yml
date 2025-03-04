@@ -12,7 +12,6 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
     keys:
-      - https://repo.librewolf.net/pubkey.gpg
       - https://packages.microsoft.com/keys/microsoft.asc
       - https://downloads.1password.com/linux/keys/1password.asc
     optfix:
@@ -22,7 +21,6 @@ modules:
       - zen-browser
       - code
       - 1password
-      - librewolf
       - cockpit-machines
       - virt-manager
       - virt-viewer
