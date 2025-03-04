@@ -26,9 +26,9 @@ jobs:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
         recipe:
-          # !! Add your recipes here
-          - bazzite-dx.yml
-          - bazzite-dx-g14.yml
+          # Gnome based
+          - gnome/bazzite-gnome-dx.yml
+          - gnome/bazzite-gnome-dx-g14.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
