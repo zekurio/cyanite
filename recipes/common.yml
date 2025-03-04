@@ -39,11 +39,17 @@ modules:
     system:
       install:
         - dev.vencord.Vesktop
-        - com.google.Chrome
         - rest.insomnia.Insomnia
         - com.spotify.Client
         - com.heroicgameslauncher.hgl
         - com.usebottles.bottles
+        - org.gnome.Papers
+        - org.gaphor.Gaphor
+        - com.vysp3r.ProtonPlus
+        - com.github.tchx84.Flatseal
+        - com.github.Matoking.protontricks
+        - de.leopoldluley.Clapgrep
+        - io.missioncenter.MissionCenter
       remove:
         - org.mozilla.firefox
 
