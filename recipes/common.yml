@@ -33,6 +33,7 @@ modules:
       - qemu-user-static
     remove:
       - lutris
+      - sunshine
 
   - type: default-flatpaks
     notify: false
