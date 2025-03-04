@@ -47,3 +47,4 @@ modules:
   - type: script
     snippets:
      - "chown -R 0:0 /usr/lib/opt/zen" # Fix zen not connecting to 1Password
+     - "chown root:root /etc/1password/custom_allowed_browsers && chmod 755 /etc/1password/custom_allowed_browsers"
