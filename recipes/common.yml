@@ -12,13 +12,15 @@ modules:
       - https://packages.microsoft.com/keys/microsoft.asc
     optfix:
       - zen
-      - 1Password
     install:
       - zen-browser
       - code
-      - 1password
     remove:
       - lutris
+
+  - type: bling
+    install:
+      - 1password
 
   - type: default-flatpaks
     notify: false
@@ -48,3 +50,4 @@ modules:
   - type: script
     snippets:
      - "chown -R 0:0 /usr/lib/opt/zen" # Fix zen not connecting to 1Password
+     - "chown root:root /etc/1password/custom_allowed_browsers && chmod 755 /etc/1password/custom_allowed_browsers"
