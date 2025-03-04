@@ -17,6 +17,7 @@ modules:
       - zen-browser
       - code
       - 1password
+      - 1password-cli
       - cockpit-machines
       - virt-manager
       - virt-viewer
@@ -34,6 +35,8 @@ modules:
     remove:
       - lutris
       - sunshine
+      - waydroid
+      - waydroid-selinux
 
   - type: default-flatpaks
     notify: false
@@ -44,29 +47,43 @@ modules:
         - com.spotify.Client
         - com.heroicgameslauncher.hgl
         - com.usebottles.bottles
-        - org.gnome.Papers
-        - org.gaphor.Gaphor
         - com.vysp3r.ProtonPlus
         - com.github.tchx84.Flatseal
         - com.github.Matoking.protontricks
-        - de.leopoldluley.Clapgrep
         - io.missioncenter.MissionCenter
+        - io.github.Foldex.AdwSteamGtk
+        - com.mattjakeman.ExtensionManager
+        - io.github.dvlv.boxbuddyrs
       remove:
         - org.mozilla.firefox
+
+  - type: gnome-extensions
+    install:
+      - 7048
 
   - type: systemd
     system:
       enabled:
         - podman.service
         - libvirtd.service
-        # TODO think about docker, can be installed here or later by the user via ujust brew
+      disabled:
+        - waydroid-container.service
 
   - type: fonts
     fonts:
       nerd-fonts:
         - FiraCode
         - JetBrainsMono
-  
+
+  - type: gschema-overrides
+    include:
+      - zz1-keybinds.gschema.override
+      - zz2-common.gschema.override
+
+  - type: bling
+    install:
+      - dconf-update-service
+
   - type: script
     snippets:
      - "chown -R 0:0 /usr/lib/opt/zen" # Fix zen not connecting to 1Password
