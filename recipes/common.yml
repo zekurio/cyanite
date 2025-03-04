@@ -8,7 +8,6 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
     keys:
-      - https://downloads.1password.com/linux/keys/1password.asc
       - https://packages.microsoft.com/keys/microsoft.asc
     optfix:
       - zen
