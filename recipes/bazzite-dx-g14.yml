@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: bazzite-dx
+name: bazzite-dx-g14
 # description will be included in the image's metadata
 description: Custom bazzite image to add development tools and other customizations. This image is based on the bazzite-gnome-asus-nvidia-open image.
 
