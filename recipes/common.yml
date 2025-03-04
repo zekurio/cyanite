@@ -8,7 +8,9 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
     keys:
+      - https://repo.librewolf.net/pubkey.gpg
       - https://packages.microsoft.com/keys/microsoft.asc
+      - https://downloads.1password.com/linux/keys/1password.asc
     optfix:
       - zen
       - 1Password
@@ -16,6 +18,21 @@ modules:
       - zen-browser
       - code
       - 1password
+      - librewolf
+      - cockpit-machines
+      - virt-manager
+      - virt-viewer
+      - edk2-ovmf
+      - libvirt
+      - qemu
+      - qemu-char-spice
+      - qemu-device-display-virtio-gpu
+      - qemu-device-display-virtio-vga
+      - qemu-device-usb-redirect
+      - qemu-img
+      - qemu-system-x86-core
+      - qemu-user-binfmt
+      - qemu-user-static
     remove:
       - lutris
 
@@ -36,6 +53,7 @@ modules:
     system:
       enabled:
         - podman.service
+        - libvirtd.service
         # TODO think about docker, can be installed here or later by the user via ujust brew
 
   - type: fonts
