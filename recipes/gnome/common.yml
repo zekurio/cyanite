@@ -4,6 +4,10 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: bling
+    install:
+      - dconf-update-service
+
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
@@ -77,12 +81,7 @@ modules:
 
   - type: gschema-overrides
     include:
-      - zz1-keybinds.gschema.override
-      - zz2-common.gschema.override
-
-  - type: bling
-    install:
-      - dconf-update-service
+      - zz1-common.gschema.override
 
   - type: script
     snippets:
