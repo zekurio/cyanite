@@ -37,3 +37,22 @@ num-workspaces=5
 
 [org/gnome/mutter]
 dynamic-workspaces=false
+
+[org/gnome/shell]
+disabled-extensions=['background-logo@fedorahosted.org', 'gsconnect@andyholmes.github.io', 'logomenu@aryan_k', 'CoverflowAltTab@palatis.blogspot.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'hotedge@jonathan.jdoda.ca', 'caffeine@patapon.info', 'rounded-window-corners@fxgn', 'tilingshell@ferrarodomenico.com']
+favorite-apps=['zen-browser.desktop', 'com.spotify.Client.desktop', 'dev.vencord.Vesktop.desktop', 'code.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/ublue.png'
+picture-uri-dark='file:///usr/share/backgrounds/ublue.png'
+primary-color='#202646'
+secondary-color='#36438E'
+
+[org/gnome/desktop/interface]
+accent-color='blue'
+color-scheme='prefer-dark'
+enable-animations=true
+icon-theme='Papirus-Dark'
