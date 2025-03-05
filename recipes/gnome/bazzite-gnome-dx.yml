@@ -11,16 +11,35 @@ image-version: latest
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - from-file: common.yml
+
+  - type: bling
+    install:
+      - dconf-update-service
+
   - type: rpm-ostree
     install:
       - openrgb
       - coolercontrol
 
-  - from-file: gnome/common.yml
+  - type: default-flatpaks
+    notify: false
+    system:
+      install:
+        - io.github.Foldex.AdwSteamGtk
+        - com.mattjakeman.ExtensionManager
+
+  - type: gnome-extensions
+    install:
+      - 7048
 
   - type: systemd
     system:
       enabled:
         - coolercontrold.service
+
+  - type: gschema-overrides
+    include:
+      - zz1-common.gschema.override
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -14,6 +14,7 @@ modules:
     keys:
       - https://packages.microsoft.com/keys/microsoft.asc
       - https://downloads.1password.com/linux/keys/1password.asc
+      - https://releases.warp.dev/linux/keys/warp.asc
     optfix:
       - zen
       - 1Password
@@ -22,6 +23,7 @@ modules:
       - code
       - 1password
       - 1password-cli
+      - warp-terminal
       - cockpit-machines
       - virt-manager
       - virt-viewer
@@ -55,33 +57,21 @@ modules:
         - com.github.tchx84.Flatseal
         - com.github.Matoking.protontricks
         - io.missioncenter.MissionCenter
-        - io.github.Foldex.AdwSteamGtk
-        - com.mattjakeman.ExtensionManager
         - io.github.dvlv.boxbuddyrs
       remove:
         - org.mozilla.firefox
-
-  - type: gnome-extensions
-    install:
-      - 7048
 
   - type: systemd
     system:
       enabled:
         - podman.service
         - libvirtd.service
-      disabled:
-        - waydroid-container.service
 
   - type: fonts
     fonts:
       nerd-fonts:
         - FiraCode
         - JetBrainsMono
-
-  - type: gschema-overrides
-    include:
-      - zz1-common.gschema.override
 
   - type: script
     snippets:
