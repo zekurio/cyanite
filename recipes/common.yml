@@ -18,6 +18,7 @@ modules:
     optfix:
       - zen
       - 1Password
+      - warpdotdev
     install:
       - zen-browser
       - code
