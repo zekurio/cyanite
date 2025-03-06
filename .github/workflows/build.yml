@@ -27,8 +27,8 @@ jobs:
       matrix:
         recipe:
           # Gnome based
-          - gnome/bazzite-gnome-dx.yml
-          - gnome/bazzite-gnome-dx-g14.yml
+          - gnome/cyanite.yml
+          - gnome/cyanite-g14.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image

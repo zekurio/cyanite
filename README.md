@@ -1,13 +1,13 @@
-# bazzite-dx &nbsp; [![bluebuild build badge](https://github.com/zekurio/bazzite-dx/actions/workflows/build.yml/badge.svg)](https://github.com/zekurio/bazzite-dx/actions/workflows/build.yml)
+# cyanite &nbsp; [![bluebuild build badge](https://github.com/zekurio/cyanite/actions/workflows/build.yml/badge.svg)](https://github.com/zekurio/cyanite/actions/workflows/build.yml)
 
-Bazzite DX is a customized version of [Bazzite](https://bazzite.gg).
+Cyanite is a customized version of [Bazzite](https://bazzite.gg).
 
 ## Available Images
 
 | Image | Base Image |
 |-------|------------|
-| bazzite-gnome-dx | ghcr.io/ublue-os/bazzite-gnome |
-| bazzite-gnome-dx-g14 | ghcr.io/ublue-os/bazzite-gnome-asus-nvidia-open |
+| cyanite | ghcr.io/ublue-os/bazzite-gnome |
+| cyanite-g14 | ghcr.io/ublue-os/bazzite-gnome-asus-nvidia-open |
 
 ## Installation
 
@@ -87,5 +87,5 @@ If built on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/zekurio/bazzite-dx
+cosign verify --key cosign.pub ghcr.io/zekurio/cyanite
 ```
