@@ -39,11 +39,6 @@ modules:
       - qemu-system-x86-core
       - qemu-user-binfmt
       - qemu-user-static
-    remove:
-      - lutris
-      - sunshine
-      - waydroid
-      - waydroid-selinux
 
   - type: default-flatpaks
     notify: false
@@ -59,8 +54,6 @@ modules:
         - com.github.Matoking.protontricks
         - io.missioncenter.MissionCenter
         - io.github.dvlv.boxbuddyrs
-      remove:
-        - org.mozilla.firefox
 
   - type: systemd
     system:
