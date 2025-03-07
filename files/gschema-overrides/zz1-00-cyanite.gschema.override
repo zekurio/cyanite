@@ -48,13 +48,9 @@ open-new-window-application-7=@as []
 open-new-window-application-8=@as []
 open-new-window-application-9=@as []
 
-[org.gnome.mutter]
-experimental-features=['variable-refresh-rate', 'scale-monitor-framebuffer', 'xwayland-native-scaling']
-check-alive-timeout=uint32 20000
-
 [org.gnome.shell]
-disabled-extensions=['background-logo@fedorahosted.org', 'gsconnect@andyholmes.github.io', 'logomenu@aryan_k', 'CoverflowAltTab@palatis.blogspot.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'hotedge@jonathan.jdoda.ca', 'caffeine@patapon.info', 'rounded-window-corners@fxgn', 'tilingshell@ferrarodomenico.com']
+disabled-extensions=['background-logo@fedorahosted.org', 'gsconnect@andyholmes.github.io', 'logomenu@aryan_k', 'hdr-enable@elrant.team']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'hotedge@jonathan.jdoda.ca', 'caffeine@patapon.info', 'rounded-window-corners@fxgn', 'tilingshell@ferrarodomenico.com', 'CoverflowAltTab@palatis.blogspot.com']
 favorite-apps=['zen-browser.desktop', 'com.spotify.Client.desktop', 'dev.vencord.Vesktop.desktop', 'code.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop']
 
 [org.gnome.desktop.background]
@@ -69,7 +65,6 @@ secondary-color='#36438E'
 accent-color='blue'
 color-scheme='prefer-dark'
 enable-animations=true
-icon-theme='Papirus-Dark'
 
 [org.gnome.Ptyxis]
 default-columns=uint32 144
@@ -79,9 +74,3 @@ font-name='JetBrainsMonoNL Nerd Font Mono 10'
 profile-uuids=['d9c8253bea6c0464dbad09cf67c73db3']
 use-system-font=false
 window-size=(uint32 144, uint32 40)
-
-[org.gnome.Ptyxis.Profiles.d9c8253bea6c0464dbad09cf67c73db3]
-custom-command='/usr/bin/fish'
-label='Fish'
-palette='Tokyo Night'
-use-custom-command=true

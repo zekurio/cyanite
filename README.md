@@ -41,17 +41,24 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 ### RPM Packages
 - zen-browser
-- code (VS Code)
+- code
 - 1password
 - 1password-cli
+- warp-terminal
 - cockpit-machines
 - virt-manager
 - virt-viewer
 - edk2-ovmf
 - libvirt
-- qemu (and related packages)
-- openrgb
-- coolercontrol
+- qemu
+- qemu-char-spice
+- qemu-device-display-virtio-gpu
+- qemu-device-display-virtio-vga
+- qemu-device-usb-redirect
+- qemu-img
+- qemu-system-x86-core
+- qemu-user-binfmt
+- qemu-user-static
 
 ### Flatpaks
 - dev.vencord.Vesktop
@@ -70,10 +77,7 @@ The `latest` tag will automatically point to the latest build. That build will s
 ## Removed Packages
 
 ### RPM Packages
-- lutris
-- sunshine
-- waydroid
-- waydroid-selinux
+- none, for now
 
 ### Flatpaks
 - org.mozilla.firefox
