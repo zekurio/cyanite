@@ -25,6 +25,7 @@ modules:
       - 1password
       - 1password-cli
       - warp-terminal
+      - cockpit-machines
       - virt-manager
       - virt-viewer
       - edk2-ovmf
@@ -64,8 +65,8 @@ modules:
   - type: systemd
     system:
       enabled:
-        - podman.service
-        - libvirtd.service
+        - podman.socket
+        - libvirtd
 
   - type: fonts
     fonts:
