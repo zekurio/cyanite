@@ -44,7 +44,8 @@ modules:
     notify: false
     system:
       install:
-        - dev.vencord.Vesktop
+        #- dev.vencord.Vesktop
+        - com.discordapp.Discord
         - rest.insomnia.Insomnia
         - com.spotify.Client
         - com.heroicgameslauncher.hgl
