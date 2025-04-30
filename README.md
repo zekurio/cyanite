@@ -41,10 +41,8 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 ### RPM Packages
 - `zen-browser`
-- `code`
 - `1password`
 - `1password-cli`
-- `warp-terminal`
 - `cockpit-machines`
 - `virt-manager`
 - `virt-viewer`
@@ -62,8 +60,6 @@ The `latest` tag will automatically point to the latest build. That build will s
   
 ### Flatpaks
 - `dev.vencord.Vesktop`
-- `rest.insomnia.Insomnia`
-- `com.spotify.Client`
 - `com.heroicgameslauncher.hgl`
 - `com.usebottles.bottles`
 - `com.vysp3r.ProtonPlus`

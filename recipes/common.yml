@@ -2,29 +2,29 @@ modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        destination: /
 
   - type: bling
     install:
       - dconf-update-service
 
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser-fedora-%OS_VERSION%.repo
+      files:
+        - 1password.repo
+      copr:
+        - sneexy/zen-browser
+        - unixlover/cursor
     keys:
-      - https://packages.microsoft.com/keys/microsoft.asc
       - https://downloads.1password.com/linux/keys/1password.asc
-      - https://releases.warp.dev/linux/keys/warp.asc
     optfix:
       - zen
       - 1Password
-      - warpdotdev
     install:
       - zen-browser
-      - code
       - 1password
       - 1password-cli
-      - warp-terminal
+      - cursor
       - cockpit-machines
       - virt-manager
       - virt-viewer
@@ -44,10 +44,7 @@ modules:
     notify: false
     system:
       install:
-        #- dev.vencord.Vesktop
-        - com.discordapp.Discord
-        - rest.insomnia.Insomnia
-        - com.spotify.Client
+        - dev.vencord.Vesktop
         - com.heroicgameslauncher.hgl
         - com.usebottles.bottles
         - com.vysp3r.ProtonPlus
@@ -67,8 +64,7 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - FiraCode
-        - JetBrainsMono
+        - 0xProto
 
   - type: script
     snippets:

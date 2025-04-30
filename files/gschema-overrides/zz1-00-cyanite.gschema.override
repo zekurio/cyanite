@@ -51,15 +51,13 @@ open-new-window-application-9=@as []
 [org.gnome.shell]
 disabled-extensions=['background-logo@fedorahosted.org', 'gsconnect@andyholmes.github.io', 'logomenu@aryan_k', 'hdr-enable@elrant.team']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'hotedge@jonathan.jdoda.ca', 'caffeine@patapon.info', 'rounded-window-corners@fxgn', 'tilingshell@ferrarodomenico.com', 'CoverflowAltTab@palatis.blogspot.com']
-favorite-apps=['zen-browser.desktop', 'com.spotify.Client.desktop', 'com.discordapp.Discord.desktop', 'code.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop']
+favorite-apps=['zen-browser.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop']
 
 [org.gnome.desktop.background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/ublue.png'
-picture-uri-dark='file:///usr/share/backgrounds/ublue.png'
-primary-color='#202646'
-secondary-color='#36438E'
+picture-uri='file:///usr/share/backgrounds/cyberpunk.png'
+picture-uri-dark='file:///usr/share/backgrounds/cyberpunk.png'
 
 [org.gnome.desktop.interface]
 accent-color='blue'
