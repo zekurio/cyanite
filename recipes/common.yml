@@ -15,8 +15,8 @@ modules:
       copr:
         - sneexy/zen-browser
         - unixlover/cursor
-    keys:
-      - https://downloads.1password.com/linux/keys/1password.asc
+      keys:
+        - https://downloads.1password.com/linux/keys/1password.asc
     optfix:
       - zen
       - 1Password
