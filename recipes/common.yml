@@ -21,24 +21,25 @@ modules:
       - zen
       - 1Password
     install:
-      - zen-browser
-      - 1password
-      - 1password-cli
-      - cursor
-      - cockpit-machines
-      - virt-manager
-      - virt-viewer
-      - edk2-ovmf
-      - libvirt
-      - qemu
-      - qemu-char-spice
-      - qemu-device-display-virtio-gpu
-      - qemu-device-display-virtio-vga
-      - qemu-device-usb-redirect
-      - qemu-img
-      - qemu-system-x86-core
-      - qemu-user-binfmt
-      - qemu-user-static
+      packages:
+        - zen-browser
+        - 1password
+        - 1password-cli
+        - cursor
+        - cockpit-machines
+        - virt-manager
+        - virt-viewer
+        - edk2-ovmf
+        - libvirt
+        - qemu
+        - qemu-char-spice
+        - qemu-device-display-virtio-gpu
+        - qemu-device-display-virtio-vga
+        - qemu-device-usb-redirect
+        - qemu-img
+        - qemu-system-x86-core
+        - qemu-user-binfmt
+        - qemu-user-static
 
   - type: default-flatpaks
     notify: false

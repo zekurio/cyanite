@@ -14,10 +14,11 @@ modules:
   - from-file: common.yml
   - from-file: gnome/gnome-common.yml
 
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - openrgb
-      - coolercontrol
+      packages:
+        - openrgb
+        - coolercontrol
 
   - type: systemd
     system:
