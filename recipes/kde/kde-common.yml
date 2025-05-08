@@ -1,0 +1,10 @@
+modules:
+  - type: dnf
+    repos:
+     copr:
+        - hazel-bunny/ricing
+    install:
+      packages:
+        - klassy
+        - kvantum-theme-libadwaita
+        - kvantum

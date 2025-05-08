@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: cyanite-gnome
+# description will be included in the image's metadata
+description: Cyanite is a custom uBlue OS image, based on Bazzite for general desktop use
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bazzite-gnome
+image-version: latest
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: common.yml
+  - from-file: gnome/gnome-common.yml
+
+  - type: dnf
+    install:
+      packages:
+        - openrgb
+        - coolercontrol
+
+  - type: systemd
+    system:
+      enabled:
+        - coolercontrold.service
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

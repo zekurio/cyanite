@@ -27,8 +27,11 @@ jobs:
       matrix:
         recipe:
           # Gnome based
-          - gnome/cyanite.yml
-          - gnome/cyanite-g14.yml
+          - gnome/cyanite-gnome.yml
+          - gnome/cyanite-gnome-g14.yml
+          # KDE based
+          - kde/cyanite.yml
+          - kde/cyanite-g14.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image

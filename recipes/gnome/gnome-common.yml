@@ -3,7 +3,6 @@ modules:
     notify: false
     system:
       install:
-        - io.github.Foldex.AdwSteamGtk
         - com.mattjakeman.ExtensionManager
 
   - type: gnome-extensions

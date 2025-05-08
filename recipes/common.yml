@@ -53,6 +53,7 @@ modules:
         - com.github.Matoking.protontricks
         - io.missioncenter.MissionCenter
         - io.github.dvlv.boxbuddyrs
+        - io.github.Foldex.AdwSteamGtk
       remove:
         - org.mozilla.firefox
 

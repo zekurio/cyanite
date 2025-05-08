@@ -5,14 +5,14 @@ name: cyanite
 description: Cyanite is a custom uBlue OS image, based on Bazzite for general desktop use
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-gnome
+base-image: ghcr.io/ublue-os/bazzite
 image-version: latest
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
   - from-file: common.yml
-  - from-file: gnome/gnome-common.yml
+  - from-file: kde/kde-common.yml
 
   - type: dnf
     install:
