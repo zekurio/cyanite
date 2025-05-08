@@ -15,14 +15,17 @@ modules:
   - from-file: kde/kde-common.yml
 
   - type: dnf
+    repos:
+      copr:
+        - codifryed/CoolerControl
     install:
       packages:
         - openrgb
-  #       - coolercontrol
+        - coolercontrol
 
-  # - type: systemd
-  #   system:
-  #     enabled:
-  #       - coolercontrold.service
+  - type: systemd
+    system:
+      enabled:
+        - coolercontrold.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
