@@ -42,22 +42,9 @@ The `latest` tag will automatically point to the latest build. That build will s
 ### RPM Packages
 - `zen-browser`
 - `1password`
-- `1password-cli`
-- `cockpit-machines`
-- `virt-manager`
-- `virt-viewer`
-- `edk2-ovmf`
-- `libvirt`
-- `qemu`
-- `qemu-char-spice`
-- `qemu-device-display-virtio-gpu`
-- `qemu-device-display-virtio-vga`
-- `qemu-device-usb-redirect`
-- `qemu-img`
-- `qemu-system-x86-core`
-- `qemu-user-binfmt`
-- `qemu-user-static`
+- `warp-terminal`
   
+
 ### Flatpaks
 - `dev.vencord.Vesktop`
 - `com.heroicgameslauncher.hgl`
@@ -66,9 +53,8 @@ The `latest` tag will automatically point to the latest build. That build will s
 - `com.github.tchx84.Flatseal`
 - `com.github.Matoking.protontricks`
 - `io.missioncenter.MissionCenter`
-- `io.github.Foldex.AdwSteamGtk`
-- `com.mattjakeman.ExtensionManager`
 - `io.github.dvlv.boxbuddyrs`
+- `io.github.Foldex.AdwSteamGtk`
 
 ## Removed Packages
 
