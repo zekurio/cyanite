@@ -43,6 +43,7 @@ The `latest` tag will automatically point to the latest build. That build will s
 - `zen-browser`
 - `1password`
 - `warp-terminal`
+- `cursor`
   
 
 ### Flatpaks

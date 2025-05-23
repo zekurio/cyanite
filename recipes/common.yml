@@ -13,12 +13,11 @@ modules:
       files:
         - 1password.repo
         - warpdotdev.repo
-        - vscode.repo
       copr:
         - sneexy/zen-browser
+        - waaiez/cursor
       keys:
         - https://downloads.1password.com/linux/keys/1password.asc
-        - https://packages.microsoft.com/keys/microsoft.asc
         - https://releases.warp.dev/linux/keys/warp.asc
     optfix:
       - zen
@@ -28,8 +27,8 @@ modules:
       packages:
         - zen-browser
         - 1password
-        - code
         - warp-terminal
+        - cursor
 
   - type: default-flatpaks
     notify: false
