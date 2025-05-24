@@ -11,13 +11,11 @@ modules:
   - type: dnf
     repos:
       files:
-        - 1password.repo
         - warpdotdev.repo
       copr:
         - sneexy/zen-browser
         - waaiez/cursor
       keys:
-        - https://downloads.1password.com/linux/keys/1password.asc
         - https://releases.warp.dev/linux/keys/warp.asc
     optfix:
       - zen
@@ -26,7 +24,6 @@ modules:
     install:
       packages:
         - zen-browser
-        - 1password
         - warp-terminal
         - cursor
 
@@ -43,6 +40,7 @@ modules:
         - io.missioncenter.MissionCenter
         - io.github.dvlv.boxbuddyrs
         - io.github.Foldex.AdwSteamGtk
+        - com.bitwarden.desktop
       remove:
         - org.mozilla.firefox
 

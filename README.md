@@ -41,7 +41,6 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 ### RPM Packages
 - `zen-browser`
-- `1password`
 - `warp-terminal`
 - `cursor`
   
@@ -56,6 +55,7 @@ The `latest` tag will automatically point to the latest build. That build will s
 - `io.missioncenter.MissionCenter`
 - `io.github.dvlv.boxbuddyrs`
 - `io.github.Foldex.AdwSteamGtk`
+- `com.bitwarden.desktop`
 
 ## Removed Packages
 
