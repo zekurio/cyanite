@@ -39,21 +39,27 @@ modules:
         - mullvad-vpn
 
   - type: default-flatpaks
-    notify: false
-    system:
-      install:
-        - com.discordapp.Discord
-        - com.heroicgameslauncher.hgl
-        - com.usebottles.bottles
-        - com.vysp3r.ProtonPlus
-        - com.github.tchx84.Flatseal
-        - com.github.Matoking.protontricks
-        - io.missioncenter.MissionCenter
-        - io.github.dvlv.boxbuddyrs
-        - io.github.Foldex.AdwSteamGtk
-        - com.bitwarden.desktop
-      remove:
-        - org.mozilla.firefox
+    configurations:
+      - scope: user
+        repo:
+          title: Flathub (user)
+        install:
+          - com.discordapp.Discord
+          - com.vysp3r.ProtonPlus
+          - io.github.dvlv.boxbuddyrs
+          - io.github.Foldex.AdwSteamGtk
+      - scope: system
+        notify: true
+        repo:
+          title: Flathub (system)
+        install:
+          - com.github.tchx84.Flatseal
+          - io.missioncenter.MissionCenter
+          - com.github.Matoking.protontricks
+          - com.heroicgameslauncher.hgl
+          - com.usebottles.bottles
+        remove:
+          - org.mozilla.firefox
 
   - type: systemd
     system:
