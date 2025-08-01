@@ -1,9 +1,15 @@
 modules:
   - type: default-flatpaks
-    notify: false
-    system:
-      install:
-        - com.mattjakeman.ExtensionManager
+    configurations:
+      - scope: user
+        repo:
+          title: Flathub (user)
+        install:
+          - com.mattjakeman.ExtensionManager
+      - scope: system
+        notify: true
+        repo:
+          title: Flathub (system)
 
   - type: gnome-extensions
     install:
