@@ -13,27 +13,26 @@ modules:
       files:
         - brave-browser.repo
         - 1password.repo
-        - vscode.repo
         - mullvad.repo
+        - terra.repo
       copr:
-        - scottames/ghostty
-        - sneexy/zen-browser
         - atim/starship
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
         - https://downloads.1password.com/linux/keys/1password.asc
-        - https://packages.microsoft.com/keys/microsoft.asc
+        - https://repos.fyralabs.com/terra$releasever/key.asc
+        - https://repos.fyralabs.com/terra$releasever-source/key.asc
     optfix:
-      - zen
       - 1Password
       - brave.com
-      - Mullvad
+      - Mullvad VPN
     install:
       packages:
+        - eza
         - ghostty
-        - code
+        - codium
+        - codium-marketplace
         - 1password
-        - zen-browser
         - brave-browser
         - starship
         - mullvad-vpn
@@ -73,5 +72,4 @@ modules:
 
   - type: script
     snippets:
-     - "chown -R 0:0 /usr/lib/opt/zen" # Fix zen not connecting to 1Password
-     - "chown root:root /etc/1password/custom_allowed_browsers && chmod 755 /etc/1password/custom_allowed_browsers"
+     - "chown -R 0:0 /usr/lib/opt/brave.com/brave/brave"
