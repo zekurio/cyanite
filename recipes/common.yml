@@ -12,7 +12,6 @@ modules:
     repos:
       files:
         - brave-browser.repo
-        - 1password.repo
         - mullvad.repo
         - vscode.repo
       copr:
@@ -31,11 +30,14 @@ modules:
       packages:
         - eza
         - ghostty
-        - 1password
         - brave-browser
         - starship
         - mullvad-vpn
         - code
+
+  - type: bling
+    install:
+      - 1password # install 1Password (stable) and `op` CLI tool
 
   - type: default-flatpaks
     configurations:
@@ -69,7 +71,3 @@ modules:
     fonts:
       nerd-fonts:
         - 0xProto
-
-  - type: script
-    snippets:
-     - "chown -R 0:0 /usr/lib/opt/brave.com/brave/brave"
