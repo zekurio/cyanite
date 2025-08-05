@@ -17,6 +17,7 @@ modules:
       copr:
         - atim/starship
         - scottames/ghostty
+        - alternateved/eza
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
         - https://downloads.1password.com/linux/keys/1password.asc
