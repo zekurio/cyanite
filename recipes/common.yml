@@ -16,7 +16,6 @@ modules:
         - vscode.repo
       copr:
         - atim/starship
-        - scottames/ghostty
         - alternateved/eza
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
@@ -29,7 +28,6 @@ modules:
     install:
       packages:
         - eza
-        - ghostty
         - brave-browser
         - starship
         - mullvad-vpn
@@ -70,4 +68,8 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - 0xProto
+        - JetBrainsMono
+        - FiraCode
+      google-fonts:
+        - Inter
+        - RobotoSlab
