@@ -14,14 +14,12 @@ modules:
         - brave-browser.repo
         - 1password.repo
         - mullvad.repo
-        - terra.repo
       copr:
         - atim/starship
+        - scottames/ghostty
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
         - https://downloads.1password.com/linux/keys/1password.asc
-        - https://repos.fyralabs.com/terra$releasever/key.asc
-        - https://repos.fyralabs.com/terra$releasever-source/key.asc
     optfix:
       - 1Password
       - brave.com
@@ -30,8 +28,6 @@ modules:
       packages:
         - eza
         - ghostty
-        - codium
-        - codium-marketplace
         - 1password
         - brave-browser
         - starship
