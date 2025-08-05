@@ -14,15 +14,6 @@ modules:
   - from-file: common.yml
   - from-file: gnome/gnome-common.yml
 
-  - type: dnf
-    repos:
-      copr:
-        - codifryed/CoolerControl
-    install:
-      packages:
-        - openrgb
-        - coolercontrol
-
   - type: systemd
     system:
       enabled:

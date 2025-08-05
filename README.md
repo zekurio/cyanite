@@ -8,6 +8,8 @@ Cyanite is a customized version of [Bazzite](https://bazzite.gg).
 |-------|------------|
 | cyanite | ghcr.io/ublue-os/bazzite-gnome |
 | cyanite-g14 | ghcr.io/ublue-os/bazzite-gnome-asus-nvidia-open |
+| cyanite-kde | ghcr.io/ublue-os/bazzite |
+| cyanite-kde-g14 | ghcr.io/ublue-os/bazzite-asus-nvidia-open |
 
 ## Installation
 
@@ -40,22 +42,41 @@ The `latest` tag will automatically point to the latest build. That build will s
 ## Added Packages
 
 ### RPM Packages
-- `zen-browser`
-- `warp-terminal`
-- `cursor`
-  
+
+#### Common
+- eza
+- brave-browser
+- starship
+- mullvad-vpn
+- code
+
+#### KDE Common
+- klassy
+- kvantum-theme-libadwaita
+- kvantum
+
+#### Gnome Specific
+- openrgb
+- coolercontrol
 
 ### Flatpaks
-- `dev.vencord.Vesktop`
-- `com.heroicgameslauncher.hgl`
-- `com.usebottles.bottles`
-- `com.vysp3r.ProtonPlus`
-- `com.github.tchx84.Flatseal`
-- `com.github.Matoking.protontricks`
-- `io.missioncenter.MissionCenter`
-- `io.github.dvlv.boxbuddyrs`
-- `io.github.Foldex.AdwSteamGtk`
-- `com.bitwarden.desktop`
+
+#### User
+- com.discordapp.Discord
+- com.vysp3r.ProtonPlus
+- io.github.dvlv.boxbuddyrs
+- io.github.Foldex.AdwSteamGtk
+- com.mattjakeman.ExtensionManager
+
+#### System
+- com.github.tchx84.Flatseal
+- io.missioncenter.MissionCenter
+- com.github.Matoking.protontricks
+- com.heroicgameslauncher.hgl
+- com.usebottles.bottles
+
+#### Gnome Extensions
+- 7048
 
 ## Removed Packages
 
