@@ -14,6 +14,7 @@ modules:
         - brave-browser.repo
         - 1password.repo
         - mullvad.repo
+        - vscode.repo
       copr:
         - atim/starship
         - scottames/ghostty
@@ -21,6 +22,7 @@ modules:
       keys:
         - https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
         - https://downloads.1password.com/linux/keys/1password.asc
+        - https://packages.microsoft.com/keys/microsoft.asc
     optfix:
       - 1Password
       - brave.com
@@ -33,6 +35,7 @@ modules:
         - brave-browser
         - starship
         - mullvad-vpn
+        - code
 
   - type: default-flatpaks
     configurations:
