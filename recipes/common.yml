@@ -47,19 +47,12 @@ modules:
           - com.vysp3r.ProtonPlus
           - io.github.dvlv.boxbuddyrs
           - io.github.Foldex.AdwSteamGtk
-      - scope: system
-        notify: true
-        repo:
-          title: Flathub (system)
-        install:
           - com.github.tchx84.Flatseal
           - io.missioncenter.MissionCenter
           - com.github.Matoking.protontricks
           - com.heroicgameslauncher.hgl
           - com.usebottles.bottles
-        remove:
-          - org.mozilla.firefox
-
+          
   - type: systemd
     system:
       enabled:
