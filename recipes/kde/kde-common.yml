@@ -1,7 +1,7 @@
 modules:
   - type: dnf
     repos:
-     copr:
+      copr:
         - hazel-bunny/ricing
     install:
       packages:

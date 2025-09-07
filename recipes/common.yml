@@ -40,13 +40,6 @@ modules:
           title: Flathub (user)
         install:
           - dev.vencord.Vesktop
-          - com.vysp3r.ProtonPlus
-          - io.github.Foldex.AdwSteamGtk
-          - com.github.tchx84.Flatseal
-          - io.missioncenter.MissionCenter
-          - com.github.Matoking.protontricks
-          - com.heroicgameslauncher.hgl
-          - com.usebottles.bottles
 
   - type: systemd
     system:

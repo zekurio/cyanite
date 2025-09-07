@@ -1,12 +1,4 @@
 modules:
-  - type: default-flatpaks
-    configurations:
-      - scope: user
-        repo:
-          title: Flathub (user)
-        install:
-          - com.mattjakeman.ExtensionManager
-
   - type: gnome-extensions
     install:
       - 7048
