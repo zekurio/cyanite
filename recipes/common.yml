@@ -61,8 +61,7 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - JetBrainsMono
-        - FiraCode
+        - GeistMono
       google-fonts:
         - Inter
-        - RobotoSlab
+        - Roboto Slab
