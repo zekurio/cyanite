@@ -29,6 +29,10 @@ modules:
         - mullvad-vpn
         - code
         - papirus-icon-theme
+    remove:
+      auto-remove: false
+      packages:
+        - webapp-manager
 
   - type: bling
     install:
@@ -48,7 +52,8 @@ modules:
           - com.github.Matoking.protontricks
           - com.heroicgameslauncher.hgl
           - com.usebottles.bottles
-          
+          - net.codelogistics.webapps
+
   - type: systemd
     system:
       enabled:
