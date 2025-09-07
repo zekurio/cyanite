@@ -40,6 +40,9 @@ modules:
           title: Flathub (user)
         install:
           - dev.vencord.Vesktop
+          - com.github.marhkb.Pods
+          - com.heroicgameslauncher.hgl
+          - com.usebottles.bottles
 
   - type: systemd
     system:
@@ -49,7 +52,10 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - GeistMono
+        - 0xProto
+        - FiraCode
+        - FiraMono
+        - JetBrainsMono
       google-fonts:
         - Inter
         - Roboto Slab
