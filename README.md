@@ -8,6 +8,7 @@ Cyanite is a customized version of [Bazzite](https://bazzite.gg).
 |-------|------------|
 | cyanite-gnome | ghcr.io/ublue-os/bazzite-gnome |
 | cyanite | ghcr.io/ublue-os/bazzite |
+| cyanite-gnome-asus-nvidia-open | ghcr.io/ublue-os/bazzite-gnome-asus-nvidia-open |
 
 ## Installation
 

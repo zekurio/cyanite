@@ -28,6 +28,8 @@ jobs:
         recipe:
           # Gnome based
           - gnome/cyanite-gnome.yml
+          # Gnome ASUS NVIDIA based
+          - gnome/cyanite-gnome-asus-nvidia-open.yml
           # KDE based
           - kde/cyanite.yml
     steps:
